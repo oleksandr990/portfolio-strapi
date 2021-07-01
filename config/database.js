@@ -1,7 +1,7 @@
 const { parse } = require("pg-connection-string");
 
 module.exports = ({ env }) => {
-  const { host, port, database, user, password } = parse(env("DATABASE_URL"));
+  const { host, port, database, user, password } = parse(env("DATABASE_URL") || 'postgres://postgres:test1423@localhost:5432/artiapp');
 
   return {
     defaultConnection: "default",
@@ -15,7 +15,7 @@ module.exports = ({ env }) => {
           database,
           username: user,
           password,
-          ssl: { rejectUnauthorized: false },
+          // ssl: { rejectUnauthorized: false },
         },
         options: {},
       },
