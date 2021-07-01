@@ -5,7 +5,7 @@
     "strapi",
     "heroku"
   ],
-  "repository": "https://github.com/strapi/strapi-heroku-template",
+  "repository": "https://github.com/arti-lab/portfolio-strapi",
   "addons": [
     "heroku-postgresql:hobby-dev"
   ],
