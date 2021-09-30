@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_category_categories",
+  "info": {
+    "name": "CategoryItem",
+    "icon": "angle-double-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "enumeration",
+      "enum": [
+        "BACKEND",
+        "MOBILE",
+        "PACKAGE",
+        "FRONTEND"
+      ]
+    }
+  }
+}

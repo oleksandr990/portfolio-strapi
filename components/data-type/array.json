@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_data_type_arrays",
+  "info": {
+    "name": "ArrayItem",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

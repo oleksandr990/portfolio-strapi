@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stacks",
+  "info": {
+    "name": "Stack",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "language": {
+      "type": "string",
+      "required": true
+    },
+    "framework": {
+      "type": "string"
+    },
+    "libraries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-type.array"
+    },
+    "databases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-type.array"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-type.categories"
+    }
+  }
+}
