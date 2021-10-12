@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_data_type_timeline_items",
+  "info": {
+    "name": "TimelineItem",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "activity": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
