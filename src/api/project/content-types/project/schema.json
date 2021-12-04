@@ -27,16 +27,13 @@
       "type": "richtext"
     },
     "mainImage": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images",
         "files",
         "videos"
       ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "type": "media",
+      "multiple": false
     },
     "stack": {
       "model": "stack"

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "Post"
+    "displayName": "Post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -35,16 +36,13 @@
       "type": "string"
     },
     "banner": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images",
         "files",
         "videos"
       ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "type": "media",
+      "multiple": false
     }
   }
 }

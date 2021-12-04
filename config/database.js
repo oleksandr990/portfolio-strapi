@@ -2,6 +2,7 @@ const { parse } = require("pg-connection-string");
 
 module.exports = ({ env }) => {
   const { host, port, database, user, password } = parse(env("DATABASE_URL") || 'postgres://postgres:test1423@localhost:5432/artiapp');
+  const isProd = process.env.NODE_ENV === "production";
 
   return {
     connection: {
@@ -12,7 +13,7 @@ module.exports = ({ env }) => {
         database,
         user,
         password,
-        ssl: { rejectUnauthorized: false },
+        ssl:  isProd? { rejectUnauthorized: false }: false,
       },
       debug: false,
     },

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "book",
     "pluralName": "books",
-    "displayName": "Book"
+    "displayName": "Book",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -25,20 +26,17 @@
     "favorite": {
       "type": "boolean"
     },
+    "readDate": {
+      "type": "datetime"
+    },
     "cover": {
-      "model": "file",
-      "via": "related",
       "allowedTypes": [
         "images",
         "files",
         "videos"
       ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "readDate": {
-      "type": "datetime"
+      "type": "media",
+      "multiple": false
     }
   }
 }
