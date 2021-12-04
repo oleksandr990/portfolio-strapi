@@ -6,7 +6,7 @@ module.exports = [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'img-src': ["'self'", 'data:', 'res.cloudinary.com', 'strapi.io'],
+          'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com', 'strapi.io'],
         },
       }
     },
