@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,16 +28,20 @@
       "type": "richtext"
     },
     "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "stack": {
-      "model": "stack"
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::stack.stack",
+      "inversedBy": "projects"
     }
   }
 }

@@ -34,6 +34,12 @@
       "type": "component",
       "repeatable": true,
       "component": "data-type.categories"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project",
+      "mappedBy": "stack"
     }
   }
 }
