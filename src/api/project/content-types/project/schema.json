@@ -42,6 +42,14 @@
       "relation": "manyToOne",
       "target": "api::stack.stack",
       "inversedBy": "projects"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Web_App",
+        "Mobile",
+        "Full_Stack"
+      ]
     }
   }
 }
