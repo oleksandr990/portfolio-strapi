@@ -50,6 +50,10 @@
         "Mobile",
         "Full_Stack"
       ]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
