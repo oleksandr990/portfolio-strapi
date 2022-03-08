@@ -48,7 +48,8 @@
       "enum": [
         "Web_App",
         "Mobile",
-        "Full_Stack"
+        "Full_Stack",
+        "Extension"
       ]
     },
     "order": {
