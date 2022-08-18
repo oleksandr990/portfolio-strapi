@@ -3,7 +3,7 @@
 // Feel free to delete this file, remove the script in the package.json and the HEROKU-ONE-CLICK in the uuid.
 
 const fs = require('fs');
-const uuid = require('uuid/v4');
+const { uuid } = require('uuidv4');
 
 const filePath = `./package.json`;
 
