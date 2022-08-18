@@ -27,8 +27,7 @@
     "knex": "<0.20.0",
     "pg": "^8.5.1",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest",
-    "uuidv4": "^6.2.13"
+    "sqlite3": "latest"
   },
   "author": {
     "name": "A Strapi developer"
