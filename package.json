@@ -1,5 +1,5 @@
 {
-  "name": "heroku",
+  "name": "portfolio-strapi",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -7,8 +7,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi",
-    "heroku-postbuild": "strapi build && node scripts/postinstall.js"
+    "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
@@ -26,8 +25,6 @@
     "fs": "^0.0.1-security",
     "knex": "<0.20.0",
     "pg": "^8.5.1",
-    "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest",
     "uuidv4": "^6.2.13"
   },
   "author": {

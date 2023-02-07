@@ -1,38 +1,13 @@
-const { parse } = require("pg-connection-string");
-
-module.exports = ({ env }) => {
-  const { host, port, database, user, password } = parse(env("DATABASE_URL") || 'postgres://postgres:test1423@localhost:5432/artiapp');
-  const isProd = process.env.NODE_ENV === "production";
-
-  return {
+module.exports = ({ env }) => ({
+  connection: {
+    client: 'postgres',
     connection: {
-      client: 'postgres',
-      connection: {
-        host,
-        port,
-        database,
-        user,
-        password,
-        ssl:  isProd? { rejectUnauthorized: false }: false,
-      },
-      debug: false,
+      host: env('PGHOST', '127.0.0.1'),
+      port: env.int('PGPORT', 5432),
+      database: env('PGDATABASE', 'strapi'),
+      user: env('PGUSER', 'strapi'),
+      password: env('PGPASSWORD', 'password'),
+      ssl: env.bool(true),
     },
-  };
-};
-
-// Use this configuration for an SQLite database on your machine.
-// module.exports = ({ env }) => ({
-//   defaultConnection: 'default',
-//   connections: {
-//     default: {
-//       connector: 'bookshelf',
-//       settings: {
-//         client: 'sqlite',
-//         filename: env('DATABASE_FILENAME', '.tmp/data.db'),
-//       },
-//       options: {
-//         useNullAsDefault: true,
-//       },
-//     },
-//   },
-// });
+  },
+});
